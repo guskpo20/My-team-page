@@ -1,0 +1,250 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container-flex{
+    margin-top: 110px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.container-flex h1{
+    width: 278px;
+    height: 47px;
+    font-family: 'PT Serif', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: -0.045em;
+    color: #000000;
+}
+
+.container-flex div h3{
+    width: 117px;
+    height: 27px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 27px;
+
+    text-transform: uppercase;
+
+    color: #000000;
+}
+
+.container-flex div p{
+    width: 439px;
+    height: 87px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+
+    color: #000000;
+}
+
+.container{
+    margin-top: 90px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container-raro{
+    display: flex;
+}
+
+.costado{
+    writing-mode: vertical-rl;
+}
+
+.container-div{
+    flex: 33%;
+    display: flex;
+    justify-content: center;
+    height: 600px;
+}
+
+.photo{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 100%;
+}
+
+.photo div{
+    align-self: center;
+}
+
+.photo div div{
+    align-self: flex-start;
+    font-family: 'PT Serif', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    /* identical to box height */
+
+    text-transform: uppercase;
+
+    color: #000000;
+}
+
+footer{
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+
+/*.container*/ .container-div h3{
+    align-self: flex-start;
+    padding-left: 42px;
+}
+
+.photo h3{
+    padding-right: 210px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    /* identical to box height */
+
+
+    color: #000000;
+}
+
+img{
+    width: 300px;
+}
+
+.photo2{
+    justify-content: end;
+}
+
+.photo5{
+    justify-content: end;
+}
+
+
+
+@media (max-width: 1199px) {
+
+    .container-flex{
+        display: inline;
+    }
+
+    .container-flex h1{
+        margin-top: 50px;
+        margin-left: 7%;
+        margin-bottom: 25px;
+    }
+
+    .descripcion{
+        margin-left: 7%;
+    }
+
+    .container{
+        justify-content: space-evenly;
+        margin-top: 60px;
+    }
+
+    .container-div{
+        flex: 50%;
+        justify-content: space-evenly;
+    }
+    
+    .container-div:nth-of-type(odd) .photo{
+        justify-content: start;
+    }
+
+    .container-div:nth-of-type(even) .photo{
+        justify-content: end;
+    }
+}
+
+
+@media (max-width: 800px) {
+
+    .container-flex div p {
+        width: 300px;
+        padding-left: 8px;
+    }
+    .container-flex div h3{
+        padding-left: 8px;
+    }
+
+    .container{
+        justify-content: space-around;
+    }
+
+    .container-div{
+        display: flex;
+        justify-content: center;
+        height:261.4px;
+        height:300px;
+    }
+    
+    .photo{
+        display: flex;
+        flex-direction: column;
+        width: 177.42px;
+        
+    }
+
+    .photo img{
+        width: 138px;
+    }
+
+    .container-div h3{
+        text-align: left;
+        font-size: 14px;
+        line-height: 21px;
+        width: 100%;
+        height: 18px;
+        color: #000000;
+        padding-left: 12px;
+        padding-right: 0px;
+    }
+
+    .photo div div{
+        font-size: 10px;
+    }
+
+    .container-div:nth-of-type(odd) .photo{
+        justify-content: start;
+    }
+
+    .container-div:nth-of-type(even) .photo{
+        justify-content: end;
+    }
+}
+
+@media (max-width: 354px){
+    .container{
+        display:inline;
+        
+    }
+
+    .container-div{
+        display: flex;
+        margin-top: 50px;
+        justify-content: space-center;
+    }
+
+    .container-div:nth-of-type(odd) .photo{
+        justify-content: start;
+    }
+
+    .container-div:nth-of-type(even) .photo{
+        justify-content: start;
+    }
+}
